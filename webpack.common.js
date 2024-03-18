@@ -8,7 +8,8 @@ module.exports = {
     
     devtool:'source-map',
     entry: {
-        bundle:path.resolve(__dirname,'src/index.js'),
+        index:path.resolve(__dirname,'src/index.js'),
+        timer:path.resolve(__dirname,'src/timer.js')
     },
     output:{
         path:  path.resolve(__dirname,'dist'),
