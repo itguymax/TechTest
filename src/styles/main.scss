@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+$primary-color: #FFFFFF;
+$secondary-color: #4073ff;
+* {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+ 
+.page {
+    background-color: $primary-color;
+     max-width: fit-content;
+     margin: auto;
+   
+}
+
+.page__header, .page__footer{
+    padding:26px 0 26px 0;
+}
+.header__logo{
+    height: 42px;
+    cursor: pointer;
+}
+.header__text p{
+    font-family: "Lato", sans-serif;
+    line-height: 18px;
+    font-size: 15px;
+}
+
+.content__right img {
+    width: 600px;
+    height: 526px;
+    margin-left: 30px;
+}
+
+@media screen and (max-width:990px) {
+.content__right img{
+    display: none;
+}
+}
+.timer {
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    align-items:center;
+}
+.timer__btn {
+  background-color: $secondary-color;
+  color: $primary-color;
+  font-size: 15px;
+  line-height: 24px;
+  border: 0;
+  padding: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.timer__display {
+    color: $secondary-color;
+    font-size: x-large;
+    line-height: 25px;
+    margin-left: 20px;
+   
+}
+.footer,.header,.content{
+   display: flex;
+   flex-direction: row;
+   justify-content:space-between;
+   align-items: center; 
+   max-width: 80vw;
+   
+}
+.page__footer {
+    margin-top: 10px;
+}
+
+
+.social__fb,.social__vk {
+height: 40px;
+width: 40px;
+border-radius: 50%;
+padding: 13px;
+margin: 5px;
+cursor: pointer;
+background-color:$secondary-color;
+}
+
+
